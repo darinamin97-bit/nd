@@ -2,7 +2,7 @@
 
 | # | Итерация | Статус | Дата | Результат |
 |---|----------|:------:|------|-----------|
-| 1 | MVP‑инициализация проекта | ⏳ | — | — |
+| 1 | MVP‑инициализация проекта | ✅ | 2025-10-20 | Monorepo, client+server скелеты, lint/CI, сборка ок |
 | 2 | Сцены Boot/Menu/Game/GameOver | ⏳ | — | — |
 | 3 | Движение и физика игрока | ⏳ | — | — |
 | 4 | Генерация чанков арены (бесконечный скролл) | ⏳ | — | — |
@@ -20,10 +20,10 @@
 ## План итераций (KISS)
 
 ### 1) MVP‑инициализация проекта
-- [ ] Инициализировать monorepo (pnpm) согласно `vision.md`
-- [ ] Добавить `packages/client` (Vite + Phaser + TS strict)
-- [ ] Добавить `packages/server` (Fastify + Prisma + PostgreSQL)
-- [ ] Настроить ESLint/Prettier, базовый CI
+- [x] Инициализировать monorepo (pnpm) согласно `vision.md`
+- [x] Добавить `packages/client` (Vite + Phaser + TS strict)
+- [x] Добавить `packages/server` (Fastify + Prisma + PostgreSQL)
+- [x] Настроить ESLint/Prettier, базовый CI
 - Тест бота: сборка клиента и запуск dev‑сервера без ошибок
 
 ### 2) Сцены Boot/Menu/Game/GameOver

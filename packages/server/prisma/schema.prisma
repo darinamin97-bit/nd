@@ -1,0 +1,28 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Score {
+  id               String   @id @default(uuid())
+  userId           String?  
+  faction          Faction
+  scoreTotal       Int
+  distance         Int
+  enemiesDefeated  Int      @default(0)
+  seed             String
+  meta             Json?
+  signature        String?
+  createdAt        DateTime @default(now())
+
+  @@index([scoreTotal, createdAt])
+}
+
+enum Faction {
+  JACOBITE
+  ENGLISH
+}
