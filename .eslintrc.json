@@ -1,0 +1,26 @@
+{
+  "root": true,
+  "env": {
+    "es2021": true,
+    "browser": false,
+    "node": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2021,
+    "sourceType": "module"
+  },
+  "ignorePatterns": [
+    "**/dist/**",
+    "**/build/**"
+  ],
+  "overrides": [
+    {
+      "files": ["packages/client/**/*.ts"],
+      "env": { "browser": true, "node": false }
+    }
+  ],
+  "extends": ["eslint:recommended"],
+  "rules": {
+    "no-console": ["warn", { "allow": ["error", "warn", "info"] }]
+  }
+}
